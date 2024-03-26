@@ -1,5 +1,5 @@
 # easyport-node-d2xx
-Library for using EasyPort in Node.js
+Cross Platform Library for using EasyPort in Node.js
 
 https://ip.festo-didactic.com/InfoPortal/MPS/EasyPort/EN/index.html
 
@@ -7,6 +7,23 @@ https://ip.festo-didactic.com/InfoPortal/MPS/EasyPort/EN/index.html
 
 EasyPort is a GPIO device designed and manufactured by Festo Didactic, for connection to Festo Products using Syslink or Sub-D Connectors.
 
+This library is designed to be cross-platform (osx/windows/linux) way to read & write data from the Easyport.
+
+It will also form the basis for another project -> @calumk/easyport-webusb
+
+> [!NOTE]
+> This specific library uses [FTDI-D2XX](https://github.com/motla/ftdi-d2xx) library.
+> 
+> This Library does **NOT** require the ActiveX Driver from Festo Didactic - This is a "standalone" re-implemmentation
+
+
+> [!IMPORTANT]
+> This library is designed for educational purposes, and should not be used for saftey-critical systems. 
+
+
+
+
+---
 
 
 ## Simple Use
@@ -31,6 +48,12 @@ console.log(devices)
 await easyport.openDevice(0);
 
 ```
+
+
+> [!IMPORTANT]
+> At the moment, Only Digital is supported.
+> Analog will be supported soon.
+
 
 
 ### Reading Bits / Bytes / Words
