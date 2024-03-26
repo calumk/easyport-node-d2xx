@@ -4,7 +4,8 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: JS-DevTools/npm-publish@v1
+      - uses: actions/checkout@v4
+      - uses: JS-DevTools/npm-publish@v3
         with:
           token: ${{ secrets.NPM_TOKEN }}
           access: "public"
