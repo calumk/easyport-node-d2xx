@@ -1,0 +1,15 @@
+{
+  "name": "@calumk/easyport-node-d2xx",
+  "version": "0.0.1",
+  "description": "Cross Platform Library for using EasyPort in Node.js",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Calum Knott",
+  "license": "CC-BY-4.0",
+  "dependencies": {
+    "ftdi-d2xx": "^1.3.1"
+  }
+}
