@@ -7,7 +7,9 @@ https://ip.festo-didactic.com/InfoPortal/MPS/EasyPort/EN/index.html
 EasyPort is a GPIO device designed and manufactured by Festo Didactic, for connection to Festo Products using Syslink or Sub-D Connectors.
 
 
+
 ## Simple Use
+This outlines simple use of the library
 
 ### Setup
 ```js
