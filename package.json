@@ -1,6 +1,6 @@
 {
   "name": "@calumk/easyport-node-d2xx",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Cross Platform Library for using EasyPort in Node.js",
   "main": "src/index.js",
   "type": "module",

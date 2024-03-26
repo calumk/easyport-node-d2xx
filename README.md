@@ -21,6 +21,10 @@ It will also form the basis for another project -> @calumk/easyport-webusb
 > This library is designed for educational purposes, and should not be used for saftey-critical systems. 
 
 
+> [!TIP]
+> At the moment, Only Digital is supported.
+> Analog will be supported soon.
+
 
 
 ---
@@ -32,7 +36,7 @@ This outlines simple use of the library
 
 ### Setup
 ```js
-import { EasyPort } from "easyport-node-d2xx";
+import { EasyPort } from "@calumk/easyport-node-d2xx";
 
 let easyport = new EasyPort({
     timeouts : {
@@ -48,13 +52,6 @@ console.log(devices)
 await easyport.openDevice(0);
 
 ```
-
-
-> [!IMPORTANT]
-> At the moment, Only Digital is supported.
-> Analog will be supported soon.
-
-
 
 ### Reading Bits / Bytes / Words
 ```js
