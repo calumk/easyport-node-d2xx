@@ -340,13 +340,17 @@ class EasyPort {
     // The Documentation uses the terms "display" and "modify" instead of "read" and "write", respectively
     // This is probably because if some german translation - so we will expose both possibilities
     // Alias for read_bit
-    display_input_bit = async (options) => { await this.read_bit(options) }
+    display_input_bit = async (options) => { await this.read_input_bit(options) }
     // Alias for read_byte
-    display_input_byte = async (options) => { await this.read_byte(options) }
+    display_input_byte = async (options) => { await this.read_input_byte(options) }
+    // Alias for read_word
+    display_input_word = async (options) => { await this.read_input_word(options) }
     // Alias for write_bit
-    modify_output_bit = async (options) => { await this.write_bit(options) }
+    modify_output_bit = async (options) => { await this.write_output_bit(options) }
     // Alias for write_byte
-    modify_output_byte = async (options) => { await this.write_byte(options) }
+    modify_output_byte = async (options) => { await this.write_output_byte(options) }
+    // Alias for write_word
+    modify_output_word = async (options) => { await this.write_output_word(options) }
     
 }
 
