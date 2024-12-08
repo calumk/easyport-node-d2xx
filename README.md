@@ -1,5 +1,5 @@
 # easyport-node-d2xx
-Cross Platform Library for using EasyPort in Node.js
+Cross Platform Library for using FESTO Didactic EasyPort in Node.js
 
 https://ip.festo-didactic.com/InfoPortal/MPS/EasyPort/EN/index.html
 
